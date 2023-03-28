@@ -1,0 +1,11 @@
+*.txt
+*.exe
+*.ninja
+*.ninja_deps
+*.ninja_log
+*.json
+*.iml
+cmake.*
+*.cmake
+*.xml
+
