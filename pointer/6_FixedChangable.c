@@ -16,7 +16,7 @@ int main(void)
 
     printf("%p \n", str1);
 
-    printf(str1);
+
 
 
 
