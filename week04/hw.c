@@ -37,7 +37,7 @@ int main(void)
             menu_price = 5500;
             break;
         default:
-            printf("메뉴를 잘못 입력하셨습니다.\n");
+            printf("[error] 메뉴를 잘못 입력하셨습니다.\n");
     }
 
     money = money - menu_price;
@@ -52,8 +52,11 @@ int main(void)
     cnt_500 = money / 500;
     money = money % 500;
 
-    printf("5천원 지폐 %d장\n", cnt_5000);
-    printf("1천원 지폐 %d장\n", cnt_1000);
-    printf("5백원 동전 %d개\n", cnt_500);
+    if (cnt_5000 > 0)
+        printf("5천원 지폐 %d장\n", cnt_5000);
+    if (cnt_1000 > 0)
+        printf("1천원 지폐 %d장\n", cnt_1000);
+    if (cnt_500)
+        printf("5백원 동전 %d개\n", cnt_500);
 
 }
