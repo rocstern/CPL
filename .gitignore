@@ -1,4 +1,6 @@
+cmake-build-debug
 *.exe
+.idea
 *.ninja
 *.ninja_deps
 *.ninja_log

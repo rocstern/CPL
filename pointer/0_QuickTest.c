@@ -1,41 +1,25 @@
 #include <stdio.h>
 
-void returnInt(int num)
+void pointerTest(char str[])
 {
-    num += 9;
-    printf("returnInt 숫자+9: %d\n", num);
+    if (str[0] == '\0')
+        return;
+
+    printf("%c\n", str[0]);
+    pointerTest(str +1);
 }
-
-
-void SimpleFunc(int * param, int len)
-{
-    for(int i = 0; i < len; i++)
-    {
-        printf("%d\t %p\n", param[i], param[i]);
-    }
-}
-
-
 
 int main(void)
 {
-    int number = 10;
-    returnInt(number);
+    char str[] = {"abcdefghijklnmopqrstuvwxyz"};
 
-    printf("main number: %d\n", number);
+//    pointerTest(str);
+    printf("%c\n", str[0]);
 
-    int arr[3] = {1 ,2 ,3};
-    int len = sizeof(arr) / sizeof(int);
+    printf("%c\n", (str+1)[0]);
 
-    for(int i = 0; i < len; i++)
-    {x
-        printf("%d\t %p\t %p\t %p \n", arr[i], &arr[i], arr, 4);
-    }
-
-    SimpleFunc(arr, len);
+    printf("%s\n", (str+2));
 
 
-
-    return 0;
 }
 
