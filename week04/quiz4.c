@@ -23,8 +23,7 @@ int main(void)
     printf("1천원 지폐 %d장\n", cnt_1000);
     printf("5백원 동전 %d개\n", cnt_500);
     printf("남은 잔액: %d원\n", money);
-
-
+c
 
 
 
