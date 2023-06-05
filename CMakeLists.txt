@@ -3,7 +3,7 @@ project(CLP C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(CLP week12/main.c)
+add_executable(CLP test.c)
 
 
 
